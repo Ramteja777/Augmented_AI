@@ -48,7 +48,7 @@ def register():
                     responseData = {"status_code": 400, "status_message": msg, "data":[]}
                     return jsonify(responseData)
 
-                if not isinstance(username, str) and isinstance(firstname, str) and isinstance(lastname, str) and isinstance(role, str) and isinstance(email, str) and isinstance(password, str) and isinstance(hasaccount, bool):
+                if not type(username) == "str" and type(firstname) == "str" and type(lastname) == "str" and type(role) == "str" and type(email) == "str" and type(password) == "str" and type(hasaccount) == "bool":
                     msg = "value type mismatch"
                     responseData = {"status_code": 400, "status_message": msg, "data":[]}
                     return jsonify(responseData)
@@ -89,5 +89,4 @@ def register():
                         policyDetails = pc.findPolicyDetails(role = role.lower())
                         if len(policyDetails):
                             aws = CloudSelector()
-                            cloudResponse, roleARN = aws.createCloudRole(accountId = aws_accountid, awsUserName = aws_username, role = role, policyARNs = policyDetails[0]['policies'], custom=True)
-                            if cloud
+                            cloudResponse, roleARN = aws.createCloudRole(accountId = aws_accountid, awsUserName = aws_username, role = role, policyARNs =

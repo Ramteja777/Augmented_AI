@@ -48,7 +48,6 @@ app.py:4:0: W0401: Wildcard import keycloakPlugin (wildcard-import)
 app.py:5:0: W0401: Wildcard import db (wildcard-import)
 app.py:6:0: W0401: Wildcard import cloudSelector (wildcard-import)
 app.py:9:0: E0401: Unable to import 'validators' (import-error)
-app.py:11:0: E0401: Unable to import 'werkzeug.security' (import-error)
 app.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
 app.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
 app.py:23:0: R0914: Too many local variables (25/15) (too-many-locals)
@@ -187,5 +186,5 @@ app.py:5:0: W0614: Unused import(s) pymongo and ObjectId from wildcard import of
 app.py:6:0: W0614: Unused import(s) boto3, AWSPlugin and ClientError from wildcard import of cloudSelector (unused-wildcard-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 2.61/10 (previous run: 0.00/10, +2.61)
+Your code has been rated at 2.80/10 (previous run: 2.61/10, +0.19)
 
