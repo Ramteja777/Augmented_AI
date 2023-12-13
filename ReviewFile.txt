@@ -186,5 +186,5 @@ app.py:5:0: W0614: Unused import(s) pymongo and ObjectId from wildcard import of
 app.py:6:0: W0614: Unused import(s) boto3, AWSPlugin and ClientError from wildcard import of cloudSelector (unused-wildcard-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 2.80/10 (previous run: 2.61/10, +0.19)
+Your code has been rated at 2.80/10 (previous run: 2.80/10, +0.00)
 
